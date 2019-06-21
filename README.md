@@ -15,7 +15,7 @@
 
 ## Solution:
 
-## API Diagram: You can create short link by going to the link: [a link](http://127.0.0.1:8000/api/)
+## API Diagram: You can create short link by running your local server  and then go to (http://127.0.0.1:8000/api/)
 
 ![alt text](tiny.png)
 
