@@ -41,6 +41,7 @@ DJANGO_APPS = (
 
 APPS = (
     'shortner',
+    'rest_framework',
 )
 
 
@@ -89,6 +90,14 @@ DATABASES = {
 }
 
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.AllowAny',),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+    )
+}
+
+
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
@@ -110,6 +119,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
+
+DOMAIN_URL = 'http://127.0.0.1:8000/'
 
 LANGUAGE_CODE = 'en-us'
 

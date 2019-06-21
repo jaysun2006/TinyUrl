@@ -14,9 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import path, re_path
-from shortner.views import CreateLink, RedirectLink
+from shortner.views import RedirectLink
+from shortner.viewsets import CreateLink
 
 urlpatterns = [
     path('api/', CreateLink.as_view(), name='create_tiny_url'),
-    re_path(r'^(?P<url>.+)/$', RedirectLink, name='redirectLink')
+    re_path(r'^(?P<url>.+)/$', RedirectLink.as_view(), name='redirectLink')
 ]

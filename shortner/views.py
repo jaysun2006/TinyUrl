@@ -1,21 +1,8 @@
 
-from django.http import JsonResponse
-from django.views import View
-from django.shortcuts import redirect
 from .models import URL
-from .services import create_tiny_url
-
-
-class CreateLink(View):
-    """
-    This is creating tiny url from original url
-    """
-    def post(self, request, *args, **kwargs):
-        data = request.POST
-        if not data.get('url'):
-            return JsonResponse({'error': 'Pass original url in url parameter'}, status=400)
-        tiny_url_data = create_tiny_url(data.get('url'))
-        return JsonResponse({'tiny_url': tiny_url_data.as_dict()})
+from django.http import JsonResponse
+from django.shortcuts import redirect
+from django.views import View
 
 
 class RedirectLink(View):
