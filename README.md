@@ -1,8 +1,26 @@
-### TinyUrl: (UrlShortner) Service
+# TinyUrl: (UrlShortner) Service
+
+
+## Requirement:
+    Implement a URL shortener service.
+    It should take any URL
+    Convert the URL into a shorter form
+    When the user keys in the shorter URL, service should redirect to the original URL
+    Expose an API for the service
+    Note:
+        1. Ensure that the code is as modular as possible.
+        2. Specs are must
 
 
 
 ## Solution:
+
+## API Diagram: You can create short link by going to the link: [a link](http://127.0.0.1:8000/api/)
+
+![alt text](tiny.png)
+
+
+### It Will Return the Reverse Link and you can copy and paste this link in browser and you will be redirected to main url
 
 ### Setup:
 
@@ -57,6 +75,7 @@
     * "Redirect url": "http://127.0.0.1:8000/<slug>/",
 
 ## API View Strucutre:
+    ● views.py : Redirect Url View
     ● Viewset.py : It keeps all the api viewset
     ● serializer.py : It keeps all the Input Data/Output Data formats
     ● permissons.py: It contains all the permission regarding the api endpoint
