@@ -19,6 +19,15 @@
 
 ![alt text](tiny.png)
 
+## Here in content section type:
+
+* {
+    "url": "https://www.glideplatform.com"
+  }
+
+## you will get new url  like http://127.0.0.1:8000/KKe6aWJsKNTLacaHoXrTVJ
+
+## copy this and paste in new browser window
 
 ### It Will Return the Reverse Link and you can copy and paste this link in browser and you will be redirected to main url
 

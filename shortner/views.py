@@ -11,6 +11,7 @@ class RedirectLink(View):
     Redirect to the Original url
     """
     def get(self, request, url):
+        import ipdb; ipdb.set_trace()
         try:
             url_obj = URL.objects.get(tiny_url=url)
         except URL.DoesNotExist:
