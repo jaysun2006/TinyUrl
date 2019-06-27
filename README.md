@@ -21,9 +21,14 @@
 
 ## Here in content section type:
 
-* {
+  {
     "url": "https://www.glideplatform.com"
   }
+
+## Like this
+
+![alt text](example.png)
+
 
 ## you will get new url  like http://127.0.0.1:8000/KKe6aWJsKNTLacaHoXrTVJ
 
