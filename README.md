@@ -20,11 +20,7 @@
 ![alt text](tiny.png)
 
 ## Here in content section type:
-
-  {
-
-    "url": "https://www.glideplatform.com"
-  }
+   ###  {"url": "https://www.glideplatform.com"}
 
 ## Like this
 
