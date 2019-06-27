@@ -3,7 +3,7 @@ from django.db import models
 
 
 class URL(models.Model):
-    tiny_url = models.CharField(max_length=256, unique=True, blank=True)
+    tiny_url = models.CharField(max_length=256, unique=True, blank=True, null=True)
     source_url = models.CharField(max_length=2000)
     created_at = models.DateTimeField(auto_now_add=True)
 
