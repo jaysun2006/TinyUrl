@@ -21,7 +21,7 @@
 
 ## Here in content section type:
 
-* {
+ {
     "url": "https://www.glideplatform.com"
   }
 
